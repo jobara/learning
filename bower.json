@@ -1,0 +1,28 @@
+{
+  "name": "learning-paper.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jobara/learning",
+  "authors": [
+    "Justin Obara <obara.justin@gmail.com>"
+  ],
+  "description": "Repository for learning paper.js",
+  "keywords": [
+    "learning",
+    "tutorials",
+    "paper.js"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "paper": "~0.9.15",
+    "jquery": "~2.1.0"
+  }
+}
