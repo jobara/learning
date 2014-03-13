@@ -1,8 +1,8 @@
-=Learning=
+#  Learning #
 
 A sandbox for learning and experimentation
 
-==Installation==
+## Installation  ##
 
 Requires:
 
