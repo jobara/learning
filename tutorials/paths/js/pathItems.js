@@ -1,12 +1,16 @@
+/* globals paper */
+
 var demo = demo || {};
 
 (function (demo, $) {
+    "use strict";
+
     demo.initSegments = function (elm) {
         var canvas = $(elm);
         paper.setup(canvas[0]);
 
         var myPath = new paper.Path();
-        myPath.strokeColor = 'black';
+        myPath.strokeColor = "black";
         myPath.add(new paper.Point(0, 0), new paper.Point(100, 50));
 
         // insert a segment between the two existing
@@ -19,7 +23,7 @@ var demo = demo || {};
         paper.setup(canvas[0]);
 
         var path = new paper.Path();
-        path.strokeColor = 'black';
+        path.strokeColor = "black";
         path.add(new paper.Point(30, 75));
         path.add(new paper.Point(30, 25));
         path.add(new paper.Point(80, 25));
@@ -43,7 +47,7 @@ var demo = demo || {};
         paper.setup(canvas[0]);
 
         var myPath = new paper.Path();
-        myPath.strokeColor = 'black';
+        myPath.strokeColor = "black";
         myPath.add(new paper.Point(40, 90));
         myPath.add(new paper.Point(90, 40));
         myPath.add(new paper.Point(140, 90));
@@ -57,7 +61,7 @@ var demo = demo || {};
         paper.setup(canvas[0]);
 
         var myCircle = new paper.Path.Circle(new paper.Point(100, 70), 50);
-        myCircle.strokeColor = 'black';
+        myCircle.strokeColor = "black";
         myCircle.selected = true;
 
         // Removes a segment from the path at the specified index
