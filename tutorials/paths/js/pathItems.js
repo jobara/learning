@@ -37,4 +37,33 @@ var demo = demo || {};
         // Smooth the segments of the copy:
         copy.smooth();
     };
+
+    demo.initClosingPaths = function (elm) {
+        var canvas = $(elm);
+        paper.setup(canvas[0]);
+
+        var myPath = new paper.Path();
+        myPath.strokeColor = 'black';
+        myPath.add(new paper.Point(40, 90));
+        myPath.add(new paper.Point(90, 40));
+        myPath.add(new paper.Point(140, 90));
+
+        // joins the first and last segments to close the path
+        myPath.closed = true;
+    };
+
+    demo.initRemovingSegments = function (elm) {
+        var canvas = $(elm);
+        paper.setup(canvas[0]);
+
+        var myCircle = new paper.Path.Circle(new paper.Point(100, 70), 50);
+        myCircle.strokeColor = 'black';
+        myCircle.selected = true;
+
+        // Removes a segment from the path at the specified index
+        myCircle.removeSegment(0);
+
+        // remove will remove the item from the project
+        // myCircle.remove();
+    };
 })(demo, jQuery);
